@@ -14,4 +14,4 @@ if [ -f nmap_previous.xml ];then
    /bin/ndiff nmap_previous.xml nmap_current.xml >> ndiff_out.txt
 fi
 
-#you have to save this file and then run it by chnging it to excutable file
+#you have to save this file and then run it by changing it to excutable file
