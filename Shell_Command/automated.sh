@@ -6,3 +6,5 @@ send "MyPassword\r"
 interact
 
 #Missing 'interact' would give some errors
+NAME="Zara Ali"
+echo $NAME
