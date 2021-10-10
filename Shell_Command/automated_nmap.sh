@@ -1,3 +1,4 @@
+// https://www.geeksforgeeks.org/basic-shell-commands-in-linux/
 #!/bin/bash
 
 # if there is a current file from a past run, then copy it to previous
@@ -13,3 +14,5 @@ fi
 if [ -f nmap_previous.xml ];then
    /bin/ndiff nmap_previous.xml nmap_current.xml >> ndiff_out.txt
 fi
+
+#you have to save this file and then run it by changing it to excutable file
