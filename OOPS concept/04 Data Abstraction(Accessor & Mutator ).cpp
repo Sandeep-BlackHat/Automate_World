@@ -6,57 +6,33 @@
 // by default class data member are private 
 // then how we are going to access the data membe outside the function // if we will not set value we will get a garbage value 
 // 
-
 #include <iostream>
 using namespace std; 
-
-class Rectangle
-{
+class Rectangle{
 private: // we made it private in order hide abstraction 
-	int length;
-	int breadth;
+	int length,breadth;
 public:
-	void setLength(int l)
-	{
+	void setLength(int l){
 		if (l >= 0)
 			length = l;
 		else
-			length = 0;
-		
-	}
-	void setBreadth(int b) // mutator 
-	{
+			length = 0;}
+	void setBreadth(int b) // mutator {
 		if (b >= 0)
 			breadth = b;
 		else
-			breadth = 0;
-		
-	}
-	int getLength() // accessore // together mutator and accessor known as property fxn /.
-	{
-		return length;
-	}
-	int getBreadth()
-	{
-		return breadth;
-	}
-	int area()
-	{
-		return length * breadth;
-	}
-	int perimeter()
-	{
-		return 2 * (length + breadth);
-	}
-};
-
-void main()
-{
+			breadth = 0;}
+	int getLength() // accessore // together mutator and accessor known as property fxn /.{
+		return length;}
+	int getBreadth(){
+		return breadth;}
+	int area(){
+		return length * breadth;}
+	int perimeter(){
+		return 2 * (length + breadth);}};
+void main(){
 	Rectangle r;
 	r.setLength(10);
 	r.setBreadth(5);
-
 	cout <<"The area of the rectangle is "<< r.area() << endl;
-	cout << "The perimeter of the rectangle " << r.perimeter() << endl;	
-	
-}
+	cout << "The perimeter of the rectangle " << r.perimeter() << endl;}
